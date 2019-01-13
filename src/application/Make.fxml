@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="180.0" prefWidth="280.0" stylesheets="@dark-theme.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.1" fx:controller="application.BuilderController">
+   <children>
+      <Button fx:id="browseButton" layoutX="218.0" layoutY="42.0" mnemonicParsing="false" onAction="#browse" prefHeight="27.0" prefWidth="35.0" text="...">
+         <font>
+            <Font name="Ubuntu" size="13.0" />
+         </font>
+      </Button>
+      <TextField fx:id="jarPath" disable="true" editable="false" layoutX="28.0" layoutY="43.0" prefHeight="25.0" prefWidth="185.0" promptText="Jar Location">
+         <font>
+            <Font name="Ubuntu" size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="102.0" layoutY="14.0" text="Builder">
+         <font>
+            <Font name="Ubuntu" size="23.0" />
+         </font>
+      </Label>
+      <Button fx:id="buildButton" layoutX="115.0" layoutY="142.0" mnemonicParsing="false" onAction="#build" text="Build">
+         <font>
+            <Font name="Ubuntu" size="13.0" />
+         </font>
+      </Button>
+      <TextField fx:id="username" layoutX="28.0" layoutY="77.0" prefHeight="25.0" prefWidth="225.0" promptText="Username">
+         <font>
+            <Font name="Ubuntu" size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="password" layoutX="28.0" layoutY="107.0" prefHeight="26.0" prefWidth="225.0" promptText="Password" />
+      <Label fx:id="errorLabel" alignment="CENTER" layoutX="1.0" prefHeight="16.0" prefWidth="280.0" style="-fx-background-color: red; -fx-text-fill: white;" text="Error:" visible="false">
+         <font>
+            <Font name="Ubuntu" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="statusLabel" layoutX="3.0" layoutY="164.0" text="Status: Not Complete">
+         <font>
+            <Font name="Ubuntu" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="165.0" prefWidth="250.0" stylesheets="@dark-theme.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.1" fx:controller="application.LoginController">
+   <children>
+      <Button fx:id="loginButton" layoutX="92.0" layoutY="131.0" mnemonicParsing="false" onAction="#login" prefHeight="26.0" prefWidth="66.0" text="Login">
+         <font>
+            <Font name="Ubuntu" size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="84.0" layoutY="14.0" text="jLock">
+         <font>
+            <Font name="Ubuntu" size="28.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usernameField" layoutX="30.0" layoutY="57.0" prefHeight="26.0" prefWidth="190.0" promptText="Username">
+         <font>
+            <Font name="Ubuntu" size="13.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="passwordField" layoutX="30.0" layoutY="95.0" prefHeight="26.0" prefWidth="190.0" promptText="Password">
+         <font>
+            <Font name="Ubuntu" size="13.0" />
+         </font>
+      </PasswordField>
+      <Label fx:id="errorLabel" alignment="CENTER" prefHeight="16.0" prefWidth="250.0" style="-fx-background-color: #ff2929;" text="Error:" textAlignment="CENTER" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Ubuntu" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

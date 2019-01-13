@@ -1,0 +1,104 @@
+.root {
+	/* set background color */
+	-fx-base: rgb(40, 40, 55);
+	-fx-background: rgb(40, 40, 55);
+	
+	/* make controls (buttons, thumb, etc.) slightly lighter */
+    -fx-color: derive(-fx-base, 10%);
+
+    /* text fields and table rows background */
+    -fx-control-inner-background: rgb(20, 20, 20);
+    /* version of -fx-control-inner-background for alternative rows */
+    -fx-control-inner-background-alt: derive(-fx-control-inner-background, 2.5%);
+
+    /* text colors depending on background's brightness */
+    -fx-light-text-color: rgb(220, 220, 220);
+    -fx-mid-text-color: rgb(100, 100, 100);
+    -fx-dark-text-color: rgb(20, 20, 20);
+
+    /* A bright blue for highlighting/accenting objects.  For example: selected
+     * text; selected items in menus, lists, trees, and tables; progress bars */
+    -fx-accent: rgb(0, 80, 100);
+
+    /* color of non-focused yet selected elements */
+    -fx-selection-bar-non-focused: rgb(50, 50, 50);
+    
+    -fx-focus-color: rgb(166, 0, 255);
+	-fx-faint-focus-color: transparent;
+}
+
+/* LIST VIEW STUFF */
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+   -fx-background-color: linear-gradient(#b527ff 0.0%, #a700ff 25.0%, #8e00d9 75.0%, #7100ad 100.0%);
+   /* -fx-text-fill: white; */
+}
+
+.list-cell {
+    -fx-font-size:16.0;
+    /*-fx-focus-color: transparent; 
+    -fx-background-insets: -1.4, 0, 1, 2;*/
+}
+
+.list-cell:focused {
+	/*-fx-faint-focus-color: rgb(166, 0, 255);
+    -fx-focus-color: rgb(166, 0, 255);*/
+    
+    
+}
+
+.list-cell:even { /* <=== changed to even */
+    /* -fx-background-color: white; */
+}
+
+.list-cell:filled:hover {
+    /*-fx-background-color: #0093ff;
+    -fx-text-fill: white; */
+}
+
+/* Make the buttons look nice */
+.button {
+	-fx-text-fill: rgb(140, 140, 140);
+	-fx-border-color: rgb(166, 0, 255);
+	-fx-border-radius: 20px;
+	-fx-background-radius: 20px;
+}
+
+/* Darker labels */
+.label {
+	-fx-text-fill: rgb(140, 140, 140);
+}
+
+/* Make text fields epic */
+.text-field {
+	-fx-text-fill: rgb(140, 140, 140);
+}
+
+.text-field:focused {
+	-fx-text-fill: rgb(166, 0, 255);
+}
+
+/* Fix derived prompt color for text fields */
+.text-input {
+    -fx-prompt-text-fill: derive(-fx-control-inner-background, +50%);
+}
+
+/* Keep prompt invisible when focused (above color fix overrides it) */
+.text-input:focused {
+    -fx-prompt-text-fill: transparent;
+}
+
+/* Fix scroll bar buttons arrows colors */
+.scroll-bar > .increment-button > .increment-arrow,
+.scroll-bar > .decrement-button > .decrement-arrow {
+    -fx-background-color: -fx-mark-highlight-color, rgb(220, 220, 220);
+}
+
+.scroll-bar > .increment-button:hover > .increment-arrow,
+.scroll-bar > .decrement-button:hover > .decrement-arrow {
+    -fx-background-color: -fx-mark-highlight-color, rgb(240, 240, 240);
+}
+
+.scroll-bar > .increment-button:pressed > .increment-arrow,
+.scroll-bar > .decrement-button:pressed > .decrement-arrow {
+    -fx-background-color: -fx-mark-highlight-color, rgb(255, 255, 255);
+}
