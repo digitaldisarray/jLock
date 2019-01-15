@@ -16,7 +16,7 @@ Pressing launch will then decrypt the file onto the disk.
 IMPORTANT: The encryption doesn't work and the (stolen) obfuscator is very spotty.
 
 ### Some extra things I might do
- - Add fancy icons
+ - Fontawesome icons
  - Convert to material design for javafx
  - Write a more secure client in c++???
 
