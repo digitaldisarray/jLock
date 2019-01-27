@@ -21,7 +21,6 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import net.contra.obfuscator.Application;
 
 public class BuilderController {
 
@@ -83,9 +82,9 @@ public class BuilderController {
 		}
 
 		// Obfuscate
-		String[] args = { chosen.getPath(), "class-name" };
+		
 		statusLabel.setText("Status: Running");
-		Application.main(args);
+		
 		statusLabel.setText("Status: Complete");
 		
 		File obfuscated = new File(chosen.getName().replace(".", "-new."));
