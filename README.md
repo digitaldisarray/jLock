@@ -21,7 +21,7 @@ IMPORTANT: The encryption doesn't work and the (stolen) obfuscator is very spott
  - Write a more secure client in c++???
 
 ### Will this ever be finished?
-Hopefully. I am fond of the user interface I have made and confident it could become a very usefull project.
+Hopefully. I am fond of the user interface I have made and confident it could become a very useful project.
 
 ## Screenshots
 ![Login screen](https://raw.githubusercontent.com/digitaldisarray/jLock/master/Screenshots/Login1.png)
